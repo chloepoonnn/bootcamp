@@ -17,11 +17,11 @@ public class DemoString {
 
     String str1 = "hello";
     System.out.println(str1); //"hello"
-    System.out.println(str1.length()); //5
+    System.out.println(str1.length()); // 5
     str1 = str1 + "world";
-    System.out.println(str1.length()); //10
+    System.out.println(str1.length()); // 10
     str1 += "!!!";
-    System.out.println(str1.length());
+    System.out.println(str1.length()); // 13
 
     // No "-", "*", "/" in string
     // String supports "+", "+="
