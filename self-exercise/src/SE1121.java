@@ -48,8 +48,10 @@ public class SE1121 {
     char c1 = 'b';
     char c2 = 'h';
     System.out.println(c1);
+    System.out.println(c2);
 
 
+    
 
 
 
