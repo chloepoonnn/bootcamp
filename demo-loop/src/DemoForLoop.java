@@ -99,22 +99,41 @@ public class DemoForLoop {
          * i) sum <= 200 the loop should be end at which number of i?
          */
 
-        int sum5 = 0;
-        int i = 0;
-        for (int j = 0; j < 101; j++) {
-            if (j % 2 == 0) {
+        int m = 0;
+        int num = 0;
+        for (int i = 0; i < 101; i++) {
+            // skip even number
+            if (i % 2 == 0) {
                 continue;
             }
-
-            if (sum5 + j >= 200) {
+            // add up odd number
+            m += i;
+            // check if sum > 200, if yes, exit loop
+            if (m > 200) {
+                m -= i;
                 break;
             }
-            sum5 += j;
-            i = j;
-
+            num = i;
         }
-        System.out.println("i=" + i + ",sum5=" + sum5);
+        System.out.println("sum=" + m + ",i=" + num);
 
+        String str = "abc pol ijk def xyz";
+        char target = 'f';
+        int n = 0;
+        boolean isFound = false;
+        for (int i = 0; i < str.length(); i++) { // charAt(i)
+            if (str.charAt(i) == target) {
+                n = i + 1;
+                isFound = true;
+                break;
+            }
+            
+            }
+            if (isFound) { // found == true
+                System.out.println("Found " + target + " at the " + n + "th charcter");
+            } else {
+                System.out.println("Not found");
+        }
 
 
     }
