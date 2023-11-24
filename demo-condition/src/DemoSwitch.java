@@ -25,7 +25,7 @@ public class DemoSwitch {
       discount += 0.1d;
       break;
       case 'N': 
-      default: // other charactersen
+      default: // other characters
 
   }
   System.out.println("discount=" + discount);
