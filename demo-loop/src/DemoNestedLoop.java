@@ -57,30 +57,26 @@ public class DemoNestedLoop {
     }
     System.out.println("");
 
-//Example 4a
-   System.out.println("Example 4a");
-      int niOfGroup = 6;
-      for (int i = 0; i < 6; i++) { // how many group of *
-      for (int j = 0; j < 3; j++) { // how many * in a group
+    // Example 4a
+    System.out.println("Example 4a:");
+    int noOfGroup = 6;
+    for (int i = 0; i < noOfGroup; i++) {
+      for (int j = 0; j < 3; j++) {
         // "*** *** *** *** *** ***"
         System.out.print("*");
       }
-      if (i != 6 - 1) {
-
+      if (i != noOfGroup - 1) {
+        System.out.print(" ");
       }
-      System.out.print(" ");
     }
 
     System.out.println("");
+    System.out.println("Example 4b:");
 
     int cnt = 0;
-    for (int i = 0; i < cnt; i++) {
-      if (++cnt % 3 == 1) {
-        System.out.print(" ");
-      }
-        ;
-
-      System.out.print("*");
+    for (int i = 0; i < 6; i++) {
+      // if (++cnt % == 0)
+      System.out.print("*** ");
     }
   }
 }
