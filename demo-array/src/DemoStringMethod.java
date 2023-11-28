@@ -98,6 +98,7 @@ public class DemoStringMethod {
     System.out.println(s5.startsWith("ABa")); //
     System.out.println(s5.length() > 10);
 
+    // concat
     String s6 = "abc";
     String s7 = "def";
     System.out.println(s6 + s7); // "abcdef" *use this

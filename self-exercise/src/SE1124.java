@@ -28,7 +28,7 @@ public class SE1124 {
 
     System.out.println("");
     int a1 = 0;
-    for (int i = 0; i < 12; i++) {
+    for (int i = 0; i < .; i++) {
       a1 = i+1;
       if (a1 % 4 != 0) {
         System.out.print("*");
