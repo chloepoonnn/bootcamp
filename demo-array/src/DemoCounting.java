@@ -34,6 +34,20 @@ public class DemoCounting {
 
     String str = "abcabcdpolxyzaa";
     char maxChar = ' ';
+    maxCount = 0;
+    int counts2[] = new int[26];
+    //charAt()
+    for (int i = 0 ; i < str.length() ; i++) {
+      counts2[str.charAt(i) - 'a']++;
+    }
+    maxCount = 0;
+    for (int i = 0; i < counts2.length; i++) {
+      if (counts2[i] > maxCount) {
+        maxCount = counts2[i];
+        maxChar = (char) (i + 'a');
+      }
+    }
+    System.out.println("Max count=" + maxCount + ", char=" + maxChar);
 
     // maxCount = 0;
 
